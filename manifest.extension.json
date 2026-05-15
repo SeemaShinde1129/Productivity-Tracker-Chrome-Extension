@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Tracker",
+  "version": "1.0.0",
+  "description": "Track website usage and productivity analytics.",
+
+  "permissions": ["tabs", "storage", "idle"],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Productivity Tracker"
+  },
+
+  "options_page": "dashboard.html",
+
+  "background": {
+    "service_worker": "src/background/background.js",
+    "type": "module"
+  }
+}
